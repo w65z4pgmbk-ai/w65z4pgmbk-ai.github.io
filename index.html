@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis collections  - Ghanaian Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <p>🎉 Pay with MTN Mobile Money & get 5% OFF! | Free delivery in kintampo for orders over ₵200</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <h1><i class="fas fa-crown"></i> Davis collection</h1>
+                <span class="tagline">Authentic Ghanaian Fashion</span>
+            </div>
+        </div>
+        
+        <div class="nav-center">
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#products">Shop</a>
+                <div class="dropdown">
+                    <a href="#categories">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#" data-filter="men">Men's Wear</a>
+                        <a href="#" data-filter="women">Women's Wear</a>
+                        <a href="#" data-filter="accessories">Accessories</a>
+                        <a href="#" data-filter="traditional">Traditional</a>
+                    </div>
+                </div>
+                <a href="#new">New Arrivals</a>
+                <a href="#sale">On Sale</a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." id="searchInput">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        
+        <div class="nav-right">
+            <a href="#" class="nav-icon" title="Wishlist">
+                <i class="far fa-heart"></i>
+                <span class="icon-badge">3</span>
+            </a>
+            <a href="#" class="nav-icon cart-icon" title="Cart">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="icon-badge cart-count">0</span>
+            </a>
+            <a href="#" class="nav-icon" title="Account">
+                <i class="far fa-user"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-search">
+            <input type="text" placeholder="Search products...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#products"><i class="fas fa-store"></i> Shop</a>
+        <a href="#categories"><i class="fas fa-list"></i> Categories</a>
+        <a href="#new"><i class="fas fa-fire"></i> New Arrivals</a>
+        <a href="#sale"><i class="fas fa-tag"></i> On Sale</a>
+        <a href="#account"><i class="far fa-user"></i> Account</a>
+        <a href="#wishlist"><i class="far fa-heart"></i> Wishlist</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2>New Kente Collection</h2>
+                    <p>Experience the richness of Ghanaian culture with our premium Kente designs</p>
+                    <button class="hero-btn">Shop Collection</button>
+                </div>
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1598032895397-b9472444bf93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Ankara Prints</h2>
+                    <p>Vibrant African prints for every occasion</p>
+                    <button class="hero-btn">Explore Ankara</button>
+                </div>
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')"></div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Shop By Category</h2>
+        <div class="category-grid">
+            <div class="category-card" data-filter="men">
+                <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1598032895397-b9472444bf93?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+                <h3>Men's Wear</h3>
+                <p>Traditional & Modern</p>
+            </div>
+            <div class="category-card" data-filter="women">
+                <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+                <h3>Women's Wear</h3>
+                <p>Elegant & Vibrant</p>
+            </div>
+            <div class="category-card" data-filter="accessories">
+                <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+                <h3>Accessories</h3>
+                <p>Complete Your Look</p>
+            </div>
+            <div class="category-card" data-filter="traditional">
+                <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')"></div>
+                <h3>Traditional</h3>
+                <p>Cultural Heritage</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <div class="sort-options">
+                <select id="sortSelect">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="rating">Highest Rated</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="product-filters">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="men">Men</button>
+            <button class="filter-btn" data-filter="women">Women</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+            <button class="filter-btn" data-filter="traditional">Traditional</button>
+        </div>
+        
+        <div class="product-grid" id="productContainer">
+            <!-- Products loaded by JavaScript -->
+        </div>
+        
+        <div class="load-more">
+            <button id="loadMoreBtn">Load More Products</button>
+        </div>
+    </section>
+
+    <!-- Promotion Banner -->
+    <section class="promotion-banner">
+        <div class="promo-content">
+            <div class="promo-text">
+                <h2><i class="fas fa-mobile-alt"></i> MTN Mobile Money Special</h2>
+                <p>Get 5% instant discount when you pay with MTN MoMo!</p>
+                <small>Use code: <strong>MTN5OFF</strong> at checkout</small>
+            </div>
+            <div class="promo-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/MTN_Logo.svg/2560px-MTN_Logo.svg.png" alt="MTN">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Free Shipping</h3>
+            <p>Free delivery in Accra for orders over ₵200</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Secure Payment</h3>
+            <p>100% secure payment with MTN MoMo</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-exchange-alt"></i>
+            <h3>Easy Returns</h3>
+            <p>14-day return policy</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>We're here to help you</p>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-bag"></i> Your Shopping Cart</h2>
+                <button class="close-cart">&times;</button>
+            </div>
+            
+            <div class="cart-body">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items loaded here -->
+                </div>
+                
+                <div class="cart-empty" id="cartEmpty">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Your cart is empty</h3>
+                    <p>Add some products to get started</p>
+                    <button class="continue-shopping">Continue Shopping</button>
+                </div>
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="cartSubtotal">₵0.00</span>
+                    </div>
+                    <div class="summary-row discount-info">
+                        <span>MTN 5% Discount</span>
+                        <span id="cartDiscount">-₵0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="cartShipping">₵0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="cartTotal">₵0.00</span>
+                    </div>
+                </div>
+                
+                <div class="cart-actions">
+                    <button class="continue-shopping">Continue Shopping</button>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+                
+                <div class="payment-methods">
+                    <p><strong>Accepted Payment Methods:</strong></p>
+                    <div class="payment-icons">
+                        <i class="fas fa-mobile-alt" title="MTN Mobile Money"></i>
+                        <i class="fab fa-cc-visa" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fas fa-money-bill-wave" title="Cash on Delivery"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <h2><i class="fas fa-crown"></i> Davis collections</h2>
+                </div>
+                <p>Bringing authentic Ghanaian fashion to your doorstep. Quality products, traditional craftsmanship.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <a href="#faq">FAQ</a>
+                <a href="#shipping">Shipping Policy</a>
+                <a href="#returns">Returns & Exchanges</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                <p><i class="fas fa-phone"></i> +233 591969093</p>
+                <p><i class="fas fa-envelope"></i> info@afrostyle.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026Davis collections. All rights reserved. | Proudly Ghanaian</p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content" id="modalContent">
+            <!-- Product details loaded here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body><!-- Admin Panel (Hidden by default) -->
+<div class="admin-panel" id="adminPanel" style="display: none;">
+    <div class="admin-content">
+        <h2>Add New Product</h2>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" required>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="productPrice">Price (₵)</label>
+                    <input type="number" id="productPrice" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="productCategory">Category</label>
+                    <select id="productCategory" required>
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="traditional">Traditional</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="productImage">Image URL</label>
+                <input type="url" id="productImage" placeholder="https://example.com/image.jpg" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="productDescription">Description</label>
+                <textarea id="productDescription" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="productMaterial">Material</label>
+                <input type="text" id="productMaterial" required>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="productColors">Colors (comma-separated)</label>
+                    <input type="text" id="productColors" placeholder="Red, Blue, Green" required>
+                </div>
+                <div class="form-group">
+                    <label for="productSizes">Sizes (comma-separated)</label>
+                    <input type="text" id="productSizes" placeholder="S, M, L, XL" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="productRating">Rating (1-5)</label>
+                    <input type="number" id="productRating" min="1" max="5" step="0.1" value="4.5">
+                </div>
+                <div class="form-group">
+                    <label for="productStock">Stock Quantity</label>
+                    <input type="number" id="productStock" min="1" value="50">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="productMadeIn">Made In</label>
+                <select id="productMadeIn" required>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Badges</label>
+                <div class="badge-options">
+                    <label><input type="checkbox" name="badges" value="new"> New</label>
+                    <label><input type="checkbox" name="badges" value="sale"> Sale</label>
+                    <label><input type="checkbox" name="badges" value="hot"> Hot</label>
+                    <label><input type="checkbox" name="badges" value="ghana"> Made in Ghana</label>
+                </div>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="add-product-btn">Add Product</button>
+                <button type="button" class="cancel-btn" onclick="hideAdminPanel()">Cancel</button>
+            </div>
+        </form>
+        
+        <div class="existing-products">
+            <h3>Existing Products</h3>
+            <div class="products-list" id="productsList">
+                <!-- Products will be listed here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Admin Button (hidden by default) -->
+<button class="admin-toggle" id="adminToggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: #333; color: white; border: none; padding: 10px 15px; border-radius: 50px; cursor: pointer;">
+    <i class="fas fa-cog"></i> Admin
+</button>
+</html>
